@@ -1,0 +1,56 @@
+{
+  "database": {
+    "server": "SURYANSH-PC\\SQLEXPRESS",
+    "database": "data-Pipeline",
+    "schema": "keyPay"
+  },
+  "apiEndpoints": [
+    {
+      "entity": "business",
+      "api": "https://employmenthero.yourpayroll.com.au/api/v2/business/{id}",
+      "method": "GET"
+    }
+  ],
+  "tableMapping": {
+    "business": {
+      "id": "id",
+      "abn": "abn",
+      "suburb": "suburb",
+      "state": "state",
+      "managementSoftwareId": "managementSoftwareId",
+      "sbrSoftwareProvider": "sbrSoftwareProvider",
+      "sbrSoftwareId": "sbrSoftwareId",
+      "isForeignEntity": "isForeignEntity",
+      "foreignEntityCountry": "foreignEntityCountry",
+      "defaultSuperRate": "defaultSuperRate",
+      "name": "name",
+      "region": "region",
+      "legalName": "legalName",
+      "contactName": "contactName",
+      "contactEmailAddress": "contactEmailAddress",
+      "contactPhoneNumber": "contactPhoneNumber",
+      "contactFaxNumber": "contactFaxNumber",
+      "externalId": "externalId",
+      "standardHoursPerDay": "standardHoursPerDay",
+      "journalService": "journalService",
+      "endOfWeek": "endOfWeek",
+      "initialFinancialYearStart": "initialFinancialYearStart",
+      "managersCanEditRosterBudgets": "managersCanEditRosterBudgets",
+      "budgetWarningPercent": "budgetWarningPercent",
+      "budgetEntryMethod": "budgetEntryMethod",
+      "addressLine1": "addressLine1",
+      "addressLine2": "addressLine2",
+      "postCode": "postCode",
+      "whiteLabelName": "whiteLabelName",
+      "whiteLabelId": "whiteLabelId",
+      "promoCode": "promoCode",
+      "dateCreated": "dateCreated",
+      "leaveAccrualStartDateType": "leaveAccrualStartDateType",
+      "leaveYearStart": "leaveYearStart",
+      "source": "source",
+      "numberOfEmployees": "numberOfEmployees",
+      "industryName": "industryName",
+      "payCycleFrequency": "payCycleFrequency"
+    }
+  }
+}

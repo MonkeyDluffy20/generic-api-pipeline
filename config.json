@@ -1,0 +1,60 @@
+{
+  "integrationConfig": {
+    "apiEndpoints": [
+      {
+        "entity": "Invoice",
+        "api": "http://api.example.com/api/v2/brand/{brandId}/Invoice/{id}",
+        "method": "GET",
+        "priority": 1,
+        "updatedField": "date",
+        "pagination": {
+          "enabled": true,
+          "pageParam": "page",
+          "limitParam": "limit"
+        },
+        "sorting": {
+          "orderBy": ["date", "invoiceNumber"],
+          "sortDirection": ["asc", "desc"]
+        },
+        "offset": {
+          "enabled": true,
+          "param": "offset"
+        },
+        "callById": {
+          "enabled": true,
+          "param": "id"
+        }
+      }
+    ],
+    "tableMapping": {
+      "Invoice": {
+        "id": "invoiceId",
+        "cultureName": "cultureName",
+        "currency": "currency",
+        "date": "date",
+        "gst": "gst",
+        "invoiceNumber": "invoiceNumber",
+        "totalExcludingGst": "totalExcludingGst",
+        "totalIncludingGst": "totalIncludingGst"
+      },
+      "InvoiceLineItems": {
+        "id": "lineItemId",
+        "invoiceId": "invoiceId",
+        "abn": "abn",
+        "billingPlan": "billingPlan",
+        "brandName": "brandName",
+        "businessId": "businessId",
+        "quantity": "quantity",
+        "totalIncludingGst": "totalIncludingGst",
+        "unitPriceIncludingGst": "unitPriceIncludingGst",
+        "whiteLabelName": "whiteLabelName"
+      },
+      "InvoiceLineItemDetails": {
+        "id": "detailId",
+        "lineItemId": "lineItemId",
+        "description": "description",
+        "groupName": "groupName"
+      }
+    }
+  }
+}

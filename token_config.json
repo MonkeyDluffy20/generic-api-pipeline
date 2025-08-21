@@ -1,0 +1,15 @@
+{
+  "tokenConfig": {
+    "tokenUrl": "https://employmenthero.yourpayroll.com.au/oauth/token",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": {
+      "grant_type": "refresh_token",
+      "refresh_token": "yab9!IAAAAH6f-B-w67WmynkaxqTVs_ESQ6sv3hLbxeSO50YhyrM_oQAAAAFVdqHK3sI4nBV0keOTppQCw0LlJhVmZOdxgwQRRXaVlXaT4AWGiCGkhQ__9a31MOu0OGmAEbIKfftg3BZWNPz98Wg9IfejuVXaoZimWC90MA3LV8sfqhL0c_2vTelgxLqCxQH6wMQlcnXOaAU7IoMD3kkMvcP-ftZUd-OTJHvyjMP1pkCr_bksQ_sxwa2iu3RkZefzuxCb2Bo4cpUaig5A",
+      "client_id": "q4ziOo9XK1cS4S9xcOulmUW4",
+      "client_secret": "zFGZKtCFRS73kuPkSEpCUzZm"
+    }
+  }
+}
