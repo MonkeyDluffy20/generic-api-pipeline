@@ -34,15 +34,14 @@ flowchart LR
     C -->|Load| D[(Database)]
     B --> E[Logging & Alerts]
 
+
 generic-pipeline/
 │
 ├── config/                # Configuration files (config.json, tokenconfig.json)
-├── utils/                 # api_client, db_client,logger,token_manager
+├── utils/                 # api_client, db_client, logger, token_manager
 │
 ├── .env                   # Environment variables
 ├── requirements.txt       # Dependencies
 └── README.md              # Project documentation
 
 ### **Happy Integrating! 🚀**
-
-
