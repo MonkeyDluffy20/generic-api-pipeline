@@ -29,18 +29,18 @@ This pipeline serves as a **unified data ingestion framework** that:
 
 ```mermaid```
 ```flowchart LR```
-   ``` A[Data Source] -->|Extract| B[Pipeline Engine]```
-   ``` B -->|Transform| C[Standardized Data Model]```
-    ```C -->|Load| D[(Database)]```
-    ```B --> E[Logging & Alerts]```
+-   ```A[Data Source] -->|Extract| B[Pipeline Engine]```
+-   ```B -->|Transform| C[Standardized Data Model]```
+-   ```C -->|Load| D[(Database)]```
+-   ```B --> E[Logging & Alerts]```
 
 
 
-*generic-pipeline*
- **config**                   ```configuration files (config.json, tokenconfig.json)```
-**utils**                     ```api_client, db_client, logger, token_manager```
-**.env**                      ```Environment variables```
-**requirements.txt**          ```Dependencies```
-**README.md**                 ```Project documentation```
+## **generic-pipeline**
+- **config**                    ```configuration files (config.json, tokenconfig.json)```
+- **utils**                     ```api_client, db_client, logger, token_manager```
+- **.env**                      ```Environment variables```
+- **requirements.txt**          ```Dependencies```
+- **README.md**                 ```Project documentation```
 
 ### **Happy Integrating! 🚀**
